@@ -1,7 +1,7 @@
 import { writeFile } from 'node:fs/promises';
 import type { Release } from '../types/index.js';
 
-const REPO_OWNER = 'nextlevelbuilder';
+const REPO_OWNER = 'loluhassan';
 const REPO_NAME = 'ui-ux-pro-max-skill';
 const API_BASE = 'https://api.github.com';
 

@@ -247,7 +247,7 @@ Each rule includes:
 Install directly in Claude Code with two commands:
 
 ```
-/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill
+/plugin marketplace add loluhassan/ui-ux-pro-max-skill
 /plugin install ui-ux-pro-max@ui-ux-pro-max-skill
 ```
 
