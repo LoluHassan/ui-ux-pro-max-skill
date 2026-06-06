@@ -36,6 +36,11 @@ async function removeSkillDir(baseDir: string, aiType: Exclude<AIType, 'all'>): 
   return removed;
 }
 
+// Type guard to ensure we don't pass 'all' to removeSkillDir
+function isPlatformAIType(ai: AIType): ai is Exclude<AIType, 'all'> {
+  return ai !== 'all';
+}
+
 export async function uninstallCommand(options: UninstallOptions): Promise<void> {
   logger.title('UI/UX Pro Max Uninstaller');
 
@@ -101,12 +106,16 @@ export async function uninstallCommand(options: UninstallOptions): Promise<void>
     if (aiType === 'all') {
       // Remove for all detected platforms
       for (const type of initialDetected) {
+        if (!isPlatformAIType(type)) continue;
         const removed = await removeSkillDir(baseDir, type);
         allRemoved.push(...removed);
       }
-    } else {
+    } else if (aiType && isPlatformAIType(aiType)) {
       const removed = await removeSkillDir(baseDir, aiType);
       allRemoved.push(...removed);
+    } else {
+      spinner.warn('No skill files found to remove');
+      return;
     }
 
     if (allRemoved.length === 0) {

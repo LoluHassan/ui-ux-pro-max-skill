@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/uipro-cli"><img src="https://img.shields.io/npm/v/uipro-cli?style=flat-square&logo=npm&label=CLI" alt="npm"></a>
-  <a href="https://www.npmjs.com/package/uipro-cli"><img src="https://img.shields.io/npm/dm/uipro-cli?style=flat-square&label=downloads" alt="npm downloads"></a>
+  <a href="https://www.npmjs.com/package/uipro-uimax-cli"><img src="https://img.shields.io/npm/v/uipro-uimax-cli?style=flat-square&logo=npm&label=CLI" alt="npm"></a>
+  <a href="https://www.npmjs.com/package/uipro-uimax-cli"><img src="https://img.shields.io/npm/dm/uipro-uimax-cli?style=flat-square&label=downloads" alt="npm downloads"></a>
   <a href="https://github.com/LoluHassan/ui-ux-pro-max-skill/stargazers"><img src="https://img.shields.io/github/stars/LoluHassan/ui-ux-pro-max-skill?style=flat-square&logo=github" alt="GitHub stars"></a>
   <a href="https://paypal.me/loluhassan"><img src="https://img.shields.io/badge/PayPal-Support%20Development-00457C?style=flat-square&logo=paypal&logoColor=white" alt="PayPal"></a>
 </p>
@@ -255,49 +255,49 @@ Install directly in Claude Code with two commands:
 
 ```bash
 # Install CLI globally
-npm install -g uipro-cli
+npm install -g uipro-uimax-cli
 
 # Go to your project
 cd /path/to/your/project
 
 # Install for your AI assistant
-uipro init --ai claude      # Claude Code
-uipro init --ai cursor      # Cursor
-uipro init --ai windsurf    # Windsurf
-uipro init --ai antigravity # Antigravity
-uipro init --ai copilot     # GitHub Copilot
-uipro init --ai kiro        # Kiro
-uipro init --ai codex       # Codex CLI
-uipro init --ai qoder       # Qoder
-uipro init --ai roocode     # Roo Code
-uipro init --ai gemini      # Gemini CLI
-uipro init --ai trae        # Trae
-uipro init --ai opencode    # OpenCode
-uipro init --ai continue    # Continue
-uipro init --ai codebuddy   # CodeBuddy
-uipro init --ai droid       # Droid (Factory)
-uipro init --ai kilocode    # KiloCode
-uipro init --ai warp        # Warp
-uipro init --ai augment     # Augment
-uipro init --ai all         # All assistants
+uipro-uimax init --ai claude      # Claude Code
+uipro-uimax init --ai cursor      # Cursor
+uipro-uimax init --ai windsurf    # Windsurf
+uipro-uimax init --ai antigravity # Antigravity
+uipro-uimax init --ai copilot     # GitHub Copilot
+uipro-uimax init --ai kiro        # Kiro
+uipro-uimax init --ai codex       # Codex CLI
+uipro-uimax init --ai qoder       # Qoder
+uipro-uimax init --ai roocode     # Roo Code
+uipro-uimax init --ai gemini      # Gemini CLI
+uipro-uimax init --ai trae        # Trae
+uipro-uimax init --ai opencode    # OpenCode
+uipro-uimax init --ai continue    # Continue
+uipro-uimax init --ai codebuddy   # CodeBuddy
+uipro-uimax init --ai droid       # Droid (Factory)
+uipro-uimax init --ai kilocode    # KiloCode
+uipro-uimax init --ai warp        # Warp
+uipro-uimax init --ai augment     # Augment
+uipro-uimax init --ai all         # All assistants
 ```
 
 ### Global Install (Available for All Projects)
 
 ```bash
-uipro init --ai claude --global   # Install to ~/.claude/skills/
-uipro init --ai cursor --global   # Install to ~/.cursor/skills/
+uipro-uimax init --ai claude --global   # Install to ~/.claude/skills/
+uipro-uimax init --ai cursor --global   # Install to ~/.cursor/skills/
 ```
 
 ### Other CLI Commands
 
 ```bash
-uipro versions              # List available versions
-uipro update                # Update to latest version
-uipro init --offline        # Skip GitHub download, use bundled assets
-uipro uninstall             # Remove skill (auto-detect platform)
-uipro uninstall --ai claude # Remove specific platform
-uipro uninstall --global    # Remove from global install
+uipro-uimax versions              # List available versions
+uipro-uimax update                # Update to latest version
+uipro-uimax init --offline        # Skip GitHub download, use bundled assets
+uipro-uimax uninstall             # Remove skill (auto-detect platform)
+uipro-uimax uninstall --ai claude # Remove specific platform
+uipro-uimax uninstall --global    # Remove from global install
 ```
 
 ## Prerequisites
@@ -449,8 +449,8 @@ The codebase has been restructured to use a **template-based generation system**
 **Always use the CLI to install:**
 
 ```bash
-npm install -g uipro-cli
-uipro init --ai <platform>
+npm install -g uipro-uimax-cli
+uipro-uimax init --ai <platform>
 ```
 
 This ensures you get the latest templates and correct file structure for your AI assistant.

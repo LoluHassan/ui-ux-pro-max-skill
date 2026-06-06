@@ -42,7 +42,7 @@ src/ui-ux-pro-max/                # Source of Truth
     ├── base/                     # Base templates (skill-content.md, quick-reference.md)
     └── platforms/                # Platform configs (claude.json, cursor.json, ...)
 
-cli/                              # CLI installer (uipro-cli on npm)
+cli/                              # CLI installer (uipro-uimax-cli on npm)
 ├── src/
 │   ├── commands/init.ts          # Install command with template generation
 │   └── utils/template.ts         # Template rendering engine
@@ -82,7 +82,7 @@ When modifying files:
    cp -r src/ui-ux-pro-max/templates/* cli/assets/templates/
    ```
 
-4. **Reference Folders** - No manual sync needed. The CLI generates these from templates during `uipro init`.
+4. **Reference Folders** - No manual sync needed. The CLI generates these from templates during `uipro-uimax init`.
 
 ## Prerequisites
 

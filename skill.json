@@ -37,5 +37,5 @@
     "augment",
     "antigravity"
   ],
-  "install": "npx uipro-cli init --ai {{platform}}"
+  "install": "npx uipro-uimax-cli init --ai {{platform}}"
 }
