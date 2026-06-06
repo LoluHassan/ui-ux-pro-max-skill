@@ -18,7 +18,7 @@ const pkg = JSON.parse(readFileSync(join(__dirname, '../package.json'), 'utf-8')
 const program = new Command();
 
 program
-  .name('uipro')
+  .name('uipro-uimax')
   .description('CLI to install UI/UX Pro Max skill for AI coding assistants')
   .version(pkg.version);
 

@@ -37,7 +37,7 @@ export async function fetchReleases(): Promise<Release[]> {
   const response = await fetch(url, {
     headers: {
       'Accept': 'application/vnd.github.v3+json',
-      'User-Agent': 'uipro-cli',
+      'User-Agent': 'uipro-uimax-cli',
     },
   });
 
@@ -56,7 +56,7 @@ export async function getLatestRelease(): Promise<Release> {
   const response = await fetch(url, {
     headers: {
       'Accept': 'application/vnd.github.v3+json',
-      'User-Agent': 'uipro-cli',
+      'User-Agent': 'uipro-uimax-cli',
     },
   });
 
@@ -72,7 +72,7 @@ export async function getLatestRelease(): Promise<Release> {
 export async function downloadRelease(url: string, dest: string): Promise<void> {
   const response = await fetch(url, {
     headers: {
-      'User-Agent': 'uipro-cli',
+      'User-Agent': 'uipro-uimax-cli',
       'Accept': 'application/octet-stream',
     },
   });

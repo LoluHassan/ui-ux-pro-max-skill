@@ -99,7 +99,7 @@ export async function cleanup(tempDir: string): Promise<void> {
  * Create a temporary directory for extracting ZIP files
  */
 export async function createTempDir(): Promise<string> {
-  return mkdtemp(join(tmpdir(), 'uipro-'));
+  return mkdtemp(join(tmpdir(), 'uipro-uimax-'));
 }
 
 /**

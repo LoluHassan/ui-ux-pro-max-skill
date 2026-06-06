@@ -6,7 +6,7 @@
 |------|------|--------|
 | **src/ui-ux-pro-max/** | **Only source code**. All CSV, scripts, and templates are modified here, serving as the "single source of truth". | ❌ Cannot be deleted; this is the one you need to maintain. |
 | **.claude/skills/ui-ux-pro-max/** | Skill for **Cursor / Claude Code**. The AI reads SKILL.md and runs `scripts/search.js` from here. By design, data and scripts here should be **symbolic links** pointing to src, eliminating the need to maintain two copies. | ❌ Cannot be deleted (otherwise the Skill won't work); however, you can change it to only link to src without keeping a duplicate copy. |
-| **cli/assets/** | Used for **npm package uipro-cli**. When a user executes `npm i -g uipro-cli` and then `uipro init`, the data/scripts/templates packed here are installed. | ❌ Cannot be deleted; just use a script to sync from src before publishing. |
+| **cli/assets/** | Used for **npm package uipro-uimax-cli**. When a user executes `npm i -g uipro-uimax-cli` and then `uipro-uimax init`, the data/scripts/templates packed here are installed. | ❌ Cannot be deleted; just use a script to sync from src before publishing. |
 
 ## Can I only keep one?
 

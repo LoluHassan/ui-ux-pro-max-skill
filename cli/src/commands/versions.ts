@@ -31,7 +31,7 @@ export async function versionsCommand(): Promise<void> {
     });
 
     console.log();
-    logger.dim('Use: uipro init --version <tag> to install a specific version');
+    logger.dim('Use: uipro-uimax init --version <tag> to install a specific version');
   } catch (error) {
     spinner.fail('Failed to fetch versions');
     if (error instanceof Error) {
